@@ -3,9 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-people-list',
   template: `
-    <p>
-      people-list Works!
-    </p>
+    <ul>
+      <li *ngFor="let person of people">
+       {{person.name}}
+      </li>
+    </ul>
   `,
   styleUrls: ['./people-list.component.scss']
 })
